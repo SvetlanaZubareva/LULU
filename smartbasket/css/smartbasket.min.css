@@ -672,7 +672,7 @@
 	background-color: #a5d6a7
 }
 .smart-basket__input-agreement:checked+.smart-basket__label-agreement:after {
-	background-color: #16a085
+	background-color: #42855F
 }
 .smart-basket__result-common {
 	display: -webkit-box;
@@ -762,7 +762,7 @@
 	}
 }
 .smart-basket__send-form {
-	background: #1bbc9b;
+	background: #5D3051;
 	border: none;
 	padding: 15px 25px;
 	color: #fff;
@@ -778,7 +778,7 @@
 	}
 }
 .smart-basket__close-form {
-	background: #3598dc;
+	background: #42855F;
 	border: none;
 	padding: 15px 25px;
 	color: #fff;
@@ -926,7 +926,7 @@
 	cursor: pointer
 }
 .smart-basket__alert-button_close {
-	background: #3598dc;
+	background: #42855F;
 	width: 48%
 }
 .smart-basket__alert-button_close:hover {
@@ -939,11 +939,11 @@
 	}
 }
 .smart-basket__alert-button_by {
-	background: #1bbc9b;
+	background: #5D3051;
 	width: 48%
 }
 .smart-basket__alert-button_by:hover {
-	background: #0faf8e
+	background: #5D3051;
 }
 @media (max-width:450px) {
 	.smart-basket__alert-button_by {

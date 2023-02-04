@@ -8,3 +8,38 @@
     background-color: inherit;
     border: none;
 }
+.product__size{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.main__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product__size-element{
+    width: 10%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #42855F;
+    cursor: pointer;
+}
+.main__button{
+    width: 50%;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5D3051;
+    margin-top: 50px;
+    cursor: pointer;
+}
