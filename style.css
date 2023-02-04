@@ -50,6 +50,7 @@
     position: absolute;
     top: 34px;
     left: 28px;
+    cursor: pointer;
 }
 .smart-basket__min-icon{
    display: none;
