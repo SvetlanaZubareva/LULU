@@ -43,3 +43,17 @@
     margin-top: 50px;
     cursor: pointer;
 }
+.smart-basket__min{
+    border: none;
+    background-color: inherit;
+    padding: 0;
+    position: absolute;
+    top: 34px;
+    left: 28px;
+}
+.smart-basket__min-icon{
+   display: none;
+}
+.header__h2-img{
+    fill: #5D3051;
+}
