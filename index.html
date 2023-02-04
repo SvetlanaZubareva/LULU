@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LULU</title>
+</head>
+<body>
+    <header>
+        <h2 class="header__h2"></h2>
+    </header>
+    <main class="main">
+        <section class="main__section">
+            <form action="">
+                <img class="main__img" src="./img/photo_2023-01-30_00-44-38.jpg" alt="Картинка" width="500px" height="500px">
+            <h2 class="main__h2">
+                Товар 1
+            </h2>
+            <p class="main__p">
+                <div class="product__price"><span class="product__price-number">500</span> ₽</div>
+            </p>
+            <!-- <div class="main__div">
+                <button class="main__button">
+                    все
+                </button>
+                <button class="main__button">
+                    три
+                </button>
+                <button class="main__button">
+                    пять
+                </button>
+                <div class="product__size"> -->
+            
+                    <div class="product__size-element" data-sb-curent-price="500" data-sb-curent-size="все" data-sb-curent-id-or-vendor-code="038">все</div>
+                    <div class="product__size-element" data-sb-curent-price="200" data-sb-curent-size="три" data-sb-curent-id-or-vendor-code="042">три</div>
+                    <div class="product__size-element" data-sb-curent-price="100" data-sb-curent-size="пять" data-sb-curent-id-or-vendor-code="042">пять</div>          
+                   </div>
+            </div>
+            <!-- <div class="main__div">
+                <button class="main__button">
+                        -
+                </button>
+                <input type="number" size="1" name="num" min="1" max="10" value="1">
+                <button class="main__button">
+                    +
+                </button>
+            </div> -->
+                <div class="product__quantity"></div>
+            </form>
+            
+            <a class="main__button" 
+                data-sb-id-or-vendor-code="1"
+                    data-sb-product-name="Товар 1"
+                    data-sb-product-price="500р"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/photo_2023-01-30_00-44-38.jpg">
+                    
+                        Добавить в корзину
+            </a>
+        </section>
+        <section class="main__section">
+            <form action="">
+                <img class="main__img" src="./img/photo_2023-02-01_23-31-12.jpg" alt="Картинка" width="500px" height="500px">
+                <h2 class="main__h2">
+                    Товар 2
+                </h2>
+                <p class="main__p">
+                    <div class="product__price"><span class="product__price-number">1000</span> ₽</div>
+                </p>
+                <!-- <div class="main__div">
+                    <button class="main__button">
+                        7
+                    </button>
+                    <button class="main__button">
+                        1
+                    </button> -->
+                    <div class="product__size">
+            
+                        <div class="product__size-element" data-sb-curent-price="1000" data-sb-curent-size="7" data-sb-curent-id-or-vendor-code="0038">7</div>
+                        <div class="product__size-element" data-sb-curent-price="1500" data-sb-curent-size="1" data-sb-curent-id-or-vendor-code="0042">1</div>
+                                   
+                       </div>
+                <!-- </div> -->
+                <!-- <div class="main__div">
+                    <button class="main__button">
+                        -
+                    </button>
+                    <input type="number" size="1" name="num" min="1" max="10" value="1">
+                    <button class="main__button">
+                        +
+                    </button>
+                </div> -->
+                <div class="product__quantity"></div>
+            </form>
+            
+                <a class="main__button"
+                data-sb-id-or-vendor-code="2"
+                    data-sb-product-name="Товар 2"
+                    data-sb-product-price="1000р"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/photo_2023-02-01_23-31-12.jpg">
+                        Добавить в корзину
+                </a>
+            
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+
+<div class="smart-basket__wrapper"></div>
+
+<script src="./smartbasket/js/smartbasket.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.smart-basket__wrapper').smbasket({
+				productElement: 'main__section',
+				buttonAddToBasket: 'main__button',
+				productPrice: 'product__price-number',
+				productSize: 'product__size-element',
+				
+				productQuantityWrapper: 'product__quantity',
+				smartBasketMinArea: 'header__h2',
+				countryCode: '+7',
+				smartBasketCurrency: '₽',
+				smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+
+				agreement: {
+					isRequired: true,
+					isChecked: true,
+					isLink: 'https://artstranger.ru/privacy.html',
+				},
+				nameIsRequired: false,
+			});
+		});
+	</script>
+</body>
+</html>
