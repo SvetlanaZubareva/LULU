@@ -341,7 +341,9 @@
   margin-bottom: 50px;
 }
 .main-index__li{
-  margin-bottom: 30px;
+  margin-bottom: 70px;
+  font-size: 37px;
+  line-height: 40px;
 }
 .main-section__h2{
   line-height: 35px;
