@@ -365,7 +365,7 @@
   color: #42855F;
   position: absolute;
   top: 70px;
-  right: 20px;
+  right: 70px;
   z-index: 5;
 }
 .main-catalog__a:hover{
@@ -436,6 +436,26 @@
   text-align: center;
   padding: 0 10% 0;
 }
+
+
+  .demo { 
+    position:relative; 
+    margin:0 auto; 
+    height: 400px;
+    width:400px;
+    display: block;
+}
+
+  .demo img { 
+    left: 0; 
+    position:absolute; 
+    top: 0; 
+}
+
+  .demo img.raz {opacity:0;filter:alpha(opacity=0);}
+  .demo:hover img.raz {opacity:1;filter:alpha(opacity=100);}
+  .demo:hover img.dva, .demo img.dva:hover {opacity:0;filter:alpha(opacity=0);}
+  
 @media(max-width:767px){
   
   .main-product-description__img{
