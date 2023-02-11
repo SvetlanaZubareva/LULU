@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="imag/jpg" sizes="32x32" href="favicon.ico">
     <link rel="icon" href="favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
     <title>LULU</title>
 </head>
 <body>
@@ -96,8 +97,8 @@
                 </p>
             </div>
             <div class="main-section__div-img">
-                <img class="main-section-img--right" src="./img/jpg/photo_2023-01-30_09-11-42.jpg" alt="Краски" width="100%" height="520">
-                <img class="main-section-img--left main-section-img--left-top" src="./img/jpg/photo_2023-01-30_09-11-44.jpg" alt="Баночки с красками" width="100%" height="360">
+                <img class="main-section-img--right main-section-img--right-mob" src="./img/jpg/photo_2023-01-30_09-11-42.jpg" alt="Краски" width="100%" height="520">
+                <img class="main-section-img--left main-section-img--left-top main-section-img--right-mob" src="./img/jpg/photo_2023-01-30_09-11-44.jpg" alt="Баночки с красками" width="100%" height="360">
             </div>
         </section>
         <ul class="main-index__ul">
@@ -122,28 +123,38 @@
             <h2 class="main-section__h2">
                 Популярные продукты
             </h2>
-            <ul class="main-section__ul">
-                <li class="main-section__li">
-                    <img src="./img/jpg/photo_2023-02-01_23-19-52.jpg" alt="Фото" width="300" height="300">
-                </li>
-                <li class="main-section__li">
-                    <img src="./img/jpg/photo_2023-02-01_23-20-03.jpg" alt="Фото" width="300" height="300">
-                </li>
-                <li class="main-section__li">
-                    <img src="./img/jpg/photo_2023-02-01_23-20-11.jpg" alt="Фото" width="300" height="300">
-                </li>
-            </ul>
-            <ul class="main-section__ul">
-                <li class="main-section__li">
-                    <img src="./img/jpg/photo_2023-02-01_23-31-12.jpg" alt="Фото" width="300" height="300">
-                </li>
-                <li class="main-section__li">
-                    <img src="./img/jpg/photo_2023-02-01_23-31-07.jpg" alt="Фото" width="300" height="300">
-                </li>
-                <li class="main-section__li">
-                    <img src="./img/jpg/photo_2023-02-01_23-31-16.jpg" alt="Фото" width="300" height="300">
-                </li>
-            </ul>
+            <!-- Оболочка для демонстрации -->
+            <div class="wrapper">
+                <!-- Контент -->
+
+                <div class="slider">
+                    <div class="slider__item filter">
+                        <img src="img/popular/photo_2023-02-01_23-19-52.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/popular/photo_2023-02-01_23-20-03.jpg" alt="">
+                    </div>
+                    <div class="slider__item filter">
+                        <img src="img/popular/photo_2023-02-01_23-20-11.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/popular/photo_2023-02-01_23-31-07.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/popular/photo_2023-02-01_23-31-12.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/popular/photo_2023-02-01_23-31-16.jpg" alt="">
+                    </div>
+                </div>
+                
+                <!-- Подключаем jQuery -->
+                <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                <!-- Подключаем слайдер Slick -->
+                <script src="js/slick.min.js"></script>
+                <!-- Подключаем файл скриптов -->
+                <script src="js/script.js"></script>
+            </div>
         </section>
     </main>
     <footer class="footer-index">
@@ -213,7 +224,9 @@
             </li>
         </ul>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <script src="script.js"></script>
+    <script src="slick.min.js"></script>
     <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
 
 <div class="smart-basket__wrapper"></div>
@@ -242,6 +255,7 @@
 				nameIsRequired: false,
 			});
 		});
+  
 	</script>
 </body>
 </html>

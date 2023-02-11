@@ -77,7 +77,35 @@
                         <a class="main-catalog__a" href="product-description.html">
                             Подробное <br> описание
                         </a>
-                        <img class="main__img" src="./img/product1/photo_2023-02-06_22-41-12.jpg" alt="Картинка" width="300px" height="300px">
+
+
+                        <div class="slider">
+  
+                            <!-- Первый слайд -->
+                            <div class="item">
+                                <img class="main__img" src="./img/product1/photo_2023-02-06_22-41-12.jpg" alt="Картинка" width="300px" height="300px">
+                            </div>
+                          
+                            <!-- Второй слайд -->
+                            <div class="item">
+                                <img class="main__img" src="./img/product1/photo_2023-02-06_20-37-26.jpg" alt="Картинка" width="300px" height="300px">
+                            </div>
+                          
+                            <!-- Третий слайд -->
+                            <div class="item">
+                                <img class="main__img" src="./img/product1/photo_2023-02-06_20-44-39.jpg" alt="Картинка" width="300px" height="300px">
+                            </div>
+                          
+                            <!-- Кнопки-стрелочки -->
+                            <a class="previous" onclick="previousSlide()">&#10094;</a>
+                            <a class="next" onclick="nextSlide()">&#10095;</a>
+                        </div>
+                        
+                        
+
+
+
+                        <!-- <img class="main__img" src="./img/product1/photo_2023-02-06_22-41-12.jpg" alt="Картинка" width="300px" height="300px"> -->
                     </div>
                     <p class="main__p">
                         <div class="product__price"><span class="product__price-number">2500</span> ₽</div>
@@ -102,6 +130,73 @@
                                 ЗАКАЗАТЬ
                 </a>
             </li>
+            <li class="main__section">
+                <form class="main__section" action="">
+                    <h2 class="main__h2">
+                        Фиалка лесная
+                    </h2>
+                    <div class="main-catalog__div">
+                        <a class="main-catalog__a" href="product-description.html">
+                            Подробное <br> описание
+                        </a>
+
+
+                        <div class="slider">
+  
+                            <!-- Первый слайд -->
+                            <div class="item">
+                                <img class="main__img" src="./img/product1/photo_2023-02-06_22-41-12.jpg" alt="Картинка" width="300px" height="300px">
+                            </div>
+                          
+                            <!-- Второй слайд -->
+                            <div class="item">
+                                <img class="main__img" src="./img/product1/photo_2023-02-06_20-37-26.jpg" alt="Картинка" width="300px" height="300px">
+                            </div>
+                          
+                            <!-- Третий слайд -->
+                            <div class="item">
+                                <img class="main__img" src="./img/product1/photo_2023-02-06_20-44-39.jpg" alt="Картинка" width="300px" height="300px">
+                            </div>
+                          
+                            <!-- Кнопки-стрелочки -->
+                            <a class="previous" onclick="previousSlide()">&#10094;</a>
+                            <a class="next" onclick="nextSlide()">&#10095;</a>
+                        </div>
+                        
+                        
+
+
+
+                        <!-- <img class="main__img" src="./img/product1/photo_2023-02-06_22-41-12.jpg" alt="Картинка" width="300px" height="300px"> -->
+                    </div>
+                    <p class="main__p">
+                        <div class="product__price"><span class="product__price-number">2500</span> ₽</div>
+                    </p>
+                    <div class="product__size"> 
+                    
+                            <div class="product__size-element" data-sb-curent-price="2500" data-sb-curent-size="ВАЙНЕРЫ И КАТТЕРЫ" data-sb-curent-id-or-vendor-code="1">ВАЙНЕРЫ И КАТТЕРЫ</div>
+                            <div class="product__size-element" data-sb-curent-price="2050" data-sb-curent-size="ВАЙНЕРЫ" data-sb-curent-id-or-vendor-code="2">ВАЙНЕРЫ</div>
+                            <div class="product__size-element" data-sb-curent-price="450" data-sb-curent-size="КАТТЕРЫ" data-sb-curent-id-or-vendor-code="3">КАТТЕРЫ</div>          
+                        </div>
+                    </div>
+                    <div class="product__quantity"></div>
+                </form>
+                    
+                <a class="main__button" 
+                        data-sb-id-or-vendor-code="1"
+                            data-sb-product-name="Фиалка лесная"
+                            data-sb-product-price="2500р"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="./img/product1/photo_2023-02-06_22-41-12.jpg">
+                            
+                                ЗАКАЗАТЬ
+                </a>
+            </li>
+
+
+
+            
+      
             <!-- <li class="main__section">
                 <form class="main__section" action="">
                     <h2 class="main__h2">
@@ -237,5 +332,56 @@
             this.classList.add('section-product__list-item--color');
             })});
 	</script>
+    <script>
+    //     /* Устанавливаем индекс слайда по умолчанию */
+    // let slideIndex = 1;
+    // showSlides(slideIndex);
+    
+    // /* Увеличиваем индекс на 1 — показываем следующий слайд*/
+    // function nextSlide() {
+    //     showSlides(slideIndex += 1);
+    // }
+    
+    // /* Уменьшает индекс на 1 — показываем предыдущий слайд*/
+    // function previousSlide() {
+    //     showSlides(slideIndex -= 1);  
+    // }
+    
+    // /* Устанавливаем текущий слайд */
+    // function currentSlide(n) {
+    //     showSlides(slideIndex = n);
+    // }
+    
+    // /* Функция перелистывания */
+    // function showSlides(n) {
+    //     let i;
+    //     let slides = document.getElementsByClassName("item");
+        
+    //     if (n > slides.length) {
+    //       slideIndex = 1
+    //     }
+    //     if (n < 1) {
+    //         slideIndex = slides.length
+    //     }
+      
+    //   /* Проходим по каждому слайду в цикле for */
+    //     for (let slide of slides) {
+    //         slide.style.display = "none";
+    //     }   
+    //     slides[slideIndex - 1].style.display = "block"; 
+    // }
+
+
+
+
+
+
+
+
+
+
+   
+    </script>
+
 </body>
 </html>

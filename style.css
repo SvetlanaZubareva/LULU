@@ -305,10 +305,9 @@
   display: none;
 }
 .main-catalog1__h2{
-  font-size: calc(20px + 30 * (100vw / 1555));
+  font-size: calc(10px + 10 * (100vw / 1555));
   line-height: calc(20px + 30 * (100vw / 1555));
-  font-family: "acquest-script";
-  color: #42855F;
+  color: #5D3051;
   text-align: center;
 }
 .main-catalog1__ul{
@@ -367,6 +366,7 @@
   position: absolute;
   top: 70px;
   right: 20px;
+  z-index: 5;
 }
 .main-catalog__a:hover{
   color: #5D3051;
@@ -400,9 +400,10 @@
   color: #42855F;
 }
 .section-product__list-item--color{
-  border: 2px solid #5D3051;
+  /* border: 2px solid #5D3051;
   border-radius: 50px;
-  padding: 5px 10px 5px;
+  padding: 5px 10px 5px; */
+  color: #42855F;
 
 }
 .main-product-description__a{
@@ -436,6 +437,7 @@
   padding: 0 10% 0;
 }
 @media(max-width:767px){
+  
   .main-product-description__img{
     width: 100%;
   }
@@ -498,7 +500,7 @@
   font-size: 39px;
 }
 .footer-index__li{
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .footer-index__li-h2{
   font-size: 35px;
@@ -516,7 +518,7 @@
   padding-bottom: 100px;
 }
 .main-catalog1__img{
-  width: 100px;
+  width: 100%;
   height: 100px;
 }
 .main-catalog1__h2{
@@ -525,7 +527,7 @@
 .main-catalog1__ul{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10%;
+  gap: 2%;
   padding-bottom: 200px;
 }
 .main-catalog1__h2--bottom2{
@@ -536,6 +538,12 @@
 }
 .main-catalog1__h2--bottom6{
   margin-bottom: 20%;
+}
+.main-section-img--right-mob{
+  height: 250px;
+}
+.main-index__ul{
+  display: none;
 }
 }
 
@@ -557,7 +565,8 @@
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 9;
+
   }
   /* добавляем "гамбургер" */
   .menu__btn > span,
@@ -592,6 +601,7 @@
     text-align: center;
     background-color: #ECEFF1;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 8;
   }
   /* элементы меню */
   .menu__item {
@@ -650,3 +660,131 @@
     top: 80px;
     width: 100%;
   }
+
+
+
+
+
+
+  /* .carousel {
+    position: relative;
+    width: 100%;
+    padding: 10px 40px;
+  }
+  
+  .carousel img {
+    width: 400px;
+    height: 400px;
+    /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок 
+    display: block;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    background: #ddd;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+  }
+  
+  .arrow:focus {
+    outline: none;
+  }
+  
+  .arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 7px;
+  }
+  
+  .next {
+    right: 7px;
+  }
+  
+  .gallery {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .gallery ul {
+    height: 20%;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+    /* http://davidwalsh.name/remove-whitespace-inline-block 
+    font-size: 0;
+  }
+  
+  .gallery li {
+    display: inline-block;
+  }
+
+
+
+
+
+
+
+  /* Слайдер 
+  .slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    height: 300px;
+}
+/* Картинка масштабируется по отношению к родительскому элементу 
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+/* Кнопки вперед и назад 
+.slider .previous, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок 
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* Анимация слайдов 
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+} */
+
+
+
