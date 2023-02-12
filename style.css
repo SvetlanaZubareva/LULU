@@ -160,6 +160,10 @@
     font-family: "acquest-script";
     font-size: calc(25px + 23 * (100vw / 1555));
     line-height: calc(20px + 20 * (100vw / 1555));
+    color: #5D3051;
+}
+.nav-index__a:hover{
+  color: #42855F;
 }
 .main-section__h2{
     font-family: "acquest-script";
@@ -173,6 +177,10 @@
 }
 .main-section__a{
     color: #5D3051;
+}
+.main-section__a:hover{
+  background-color: #5D3051;
+  color: #fff;
 }
 .main-index__li{
     color: #5D3051;
@@ -264,6 +272,9 @@
     fill: #5D3051;
     margin: 50px 0 50px;
 }
+.footer-index__a-svg:hover{
+  fill: #42855F;
+}
 .footer-index__ul--left{
     justify-content: left;
 }
@@ -275,6 +286,12 @@
     color: #5D3051;
     font-size: calc(20px + 10 * (100vw / 1555));
     line-height: calc(20px + 10 * (100vw / 1555));
+}
+.footer-index__a:hover{
+  color: #42855F;
+}
+.header__h2-img:hover{
+  fill: #42855F;
 }
 .main-delivery{
     padding: 0 5% 200px;
@@ -348,6 +365,8 @@
   padding: 10% 5% 10%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .main__section{
   margin-right: 5%;
@@ -365,7 +384,7 @@
   color: #42855F;
   position: absolute;
   top: 70px;
-  right: 70px;
+  right: 30px;
   z-index: 5;
 }
 .main-catalog__a:hover{
@@ -441,8 +460,8 @@
   .demo { 
     position:relative; 
     margin:0 auto; 
-    height: 400px;
-    width:400px;
+    height: 300px;
+    width:300px;
     display: block;
 }
 
@@ -457,7 +476,21 @@
   .demo:hover img.dva, .demo img.dva:hover {opacity:0;filter:alpha(opacity=0);}
   
 @media(max-width:767px){
-  
+  .demo{
+    width: 100px;
+    height: 100px;
+  }
+  .raz,
+  .dva{
+    width: 100px;
+    height: 100px;
+  }
+  .font-size{
+    font-size: 15px;
+  }
+  .font-size1{
+    font-size: 10px;
+  }
   .main-product-description__img{
     width: 100%;
   }
@@ -541,9 +574,9 @@
   width: 100%;
   height: 100px;
 }
-.main-catalog1__h2{
+/* .main-catalog1__h2{
   width: 100px;
-}
+} */
 .main-catalog1__ul{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -556,14 +589,23 @@
 .main-catalog1__h2--bottom1{
   margin-bottom: 0;
 }
-.main-catalog1__h2--bottom6{
+/* .main-catalog1__h2--bottom6{
   margin-bottom: 20%;
-}
+} */
 .main-section-img--right-mob{
   height: 250px;
 }
 .main-index__ul{
   display: none;
+}
+.main-catalog__ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main__button--mobil{
+  width: 90%;
+  margin-top: 20%;
+  height: 40px;
 }
 }
 
@@ -684,127 +726,11 @@
 
 
 
-
-
-  /* .carousel {
-    position: relative;
-    width: 100%;
-    padding: 10px 40px;
-  }
-  
-  .carousel img {
-    width: 400px;
-    height: 400px;
-    /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок 
-    display: block;
-  }
-  
-  .arrow {
-    position: absolute;
-    top: 60px;
-    padding: 0;
-    background: #ddd;
-    border-radius: 15px;
-    border: 1px solid gray;
-    font-size: 24px;
-    line-height: 24px;
-    color: #444;
-    display: block;
-  }
-  
-  .arrow:focus {
-    outline: none;
-  }
-  
-  .arrow:hover {
-    background: #ccc;
-    cursor: pointer;
-  }
-  
-  .prev {
-    left: 7px;
-  }
-  
-  .next {
-    right: 7px;
-  }
-  
-  .gallery {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .gallery ul {
-    height: 20%;
-    width: 9999px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    transition: margin-left 250ms;
-    /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
-    /* http://davidwalsh.name/remove-whitespace-inline-block 
-    font-size: 0;
-  }
-  
-  .gallery li {
-    display: inline-block;
-  }
-
-
-
-
-
-
-
-  /* Слайдер 
-  .slider{
-    max-width: 90%;
-    position: relative;
-    margin: auto;
-    height: 300px;
+.smart-basket__min{
+  width: 50px;
+  height: 50px;
+  left: 4px;
 }
-/* Картинка масштабируется по отношению к родительскому элементу 
-.slider .item img {
-    object-fit: cover;
-    width: 100%;
-    height: 300px;
-}
-/* Кнопки вперед и назад 
-.slider .previous, .slider .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-.slider .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-/* При наведении на кнопки добавляем фон кнопок 
-.slider .previous:hover,
-.slider .next:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-/* Анимация слайдов 
-.slider .item {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@keyframes fade {
-    from {
-        opacity: 0.4
-    }
-    to {
-        opacity: 1
-    }
-} */
 
 
 
